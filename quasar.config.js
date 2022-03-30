@@ -67,7 +67,7 @@ module.exports = configure(function (/* ctx */) {
 
 			// rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-			publicPath: '/elden-ring-save-manager',
+			publicPath: '/elden-ring-save-manager/',
 			// analyze: true,
 			// env: {},
 			// rawDefine: {}
