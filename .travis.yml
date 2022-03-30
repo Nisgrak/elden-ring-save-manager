@@ -13,5 +13,3 @@ deploy:
     # Set in the Travis settings page of your repository, as a secure variable.
     github_token: $GITHUB_TOKEN
     keep_history: true
-    on:
-        branch: main
