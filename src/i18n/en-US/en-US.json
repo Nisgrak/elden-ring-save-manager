@@ -1,0 +1,43 @@
+{
+	"change": "Change",
+	"compatibleBrowsers": "Some of the supported browsers are:",
+	"deleteSave": "Delete save",
+	"eldenRingSave": "Elden Ring Save",
+	"emptyFolders": "You will create this folder",
+	"emptyStructure": "No folders or saves detected",
+	"folderName": "Folder name",
+	"incompatibleBrowser": "The browser is not supported, some of the supported browsers are:",
+	"loadSave": "Load save",
+	"loadSaveAndCopy": "Select save and copy",
+	"requestPermission": {
+		"originalSave": {
+			"cancel": {
+				"title": "Change save"
+			},
+			"message": "We need you to give us permission again for your save of Elden Ring {0}",
+			"ok": {
+				"title": "Grant permission"
+			},
+			"title": "Permission for Elden Ring save"
+		},
+		"savesFolder": {
+			"cancel": {
+				"title": "Change folder"
+			},
+			"message": "We need you to give us permission again to access the folder {0}",
+			"ok": {
+				"title": "Grant permission"
+			},
+			"title": "Save folder permission"
+		}
+	},
+	"saveBackup": "Save file",
+	"saveFolder": "Saves folder",
+	"saveName": "File name",
+	"selectOriginalSave": "Select Elden Ring save",
+	"selectSaveFolder": "Select saves folder",
+	"validate": {
+		"folderName": "You must indicate the name of the folder",
+		"saveName": "You must indicate the name of the save"
+	}
+}
