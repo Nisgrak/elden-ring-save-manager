@@ -6,14 +6,14 @@ env:
     githubEmail: eneko.rodriguez99@gmail.com
     deployToRepo: elden-ring-save-manager
 
-name: Github Pages Astro CI
+name: Github Pages
 
 on:
     # Activa el flujo de trabajo en eventos de push y pull requests, pero solo para la rama principal
     push:
-        branches: [main]
+        branches: [master]
     pull_request:
-        branches: [main]
+        branches: [master]
 
     # Permite ejecutar este flujo de trabajo manualmente desde la pestaña Acciones.
     workflow_dispatch:
