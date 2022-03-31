@@ -165,7 +165,10 @@ import { get, set } from 'idb-keyval';
 const { t } = useI18n();
 const $q = useQuasar();
 
-let isCompatible = ref(window.showDirectoryPicker !== undefined);
+let isCompatible = ref(
+	window.showDirectoryPicker !== undefined &&
+		window.showOpenFilePicker !== undefined
+);
 let compatibleBrowsers = [
 	{
 		name: 'Vivaldi',
@@ -178,14 +181,6 @@ let compatibleBrowsers = [
 	{
 		name: 'Edge',
 		image: 'https://edgefrecdn.azureedge.net/welcome/sitecdn/img/icon-shadow.9976a83.png',
-	},
-	{
-		name: 'Brave',
-		image: 'https://brave.com/static-assets/images/brave-release-badge.png',
-	},
-	{
-		name: 'Safari',
-		image: 'https://help.apple.com/assets/61DC93ADEE8E1876E9530985/61DC93ADEE8E1876E953098C/es_ES/fd47575ee10ce7f149900e7dc633c131.png',
 	},
 ];
 
