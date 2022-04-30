@@ -10,6 +10,16 @@
 	"loadSave": "Load save",
 	"loadSaveAndCopy": "Select save and copy",
 	"requestPermission": {
+		"loadSaveDialog": {
+			"cancel": {
+				"title": "Cancel"
+			},
+			"message": "You are going to overwrite your currently loaded game, are you sure?",
+			"ok": {
+				"title": "Overwrite"
+			},
+			"title": "Load save"
+		},
 		"originalSave": {
 			"cancel": {
 				"title": "Change save"

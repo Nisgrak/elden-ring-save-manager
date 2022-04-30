@@ -419,12 +419,28 @@ let clearForm = () => {
 };
 
 let loadSave = async (node: { father: string; label: string }) => {
-	const fatherHandler = await savesFolder.value.getDirectoryHandle(
-		node.father
-	);
+	$q.dialog({
+		title: t('requestPermission.loadSaveDialog.title'),
+		message: t('requestPermission.loadSaveDialog.message', [
+			savesFolder.value.name,
+		]),
+		persistent: true,
+		ok: {
+			label: t('requestPermission.loadSaveDialog.ok.title'),
+			color: 'primary',
+		},
+		cancel: {
+			label: t('requestPermission.loadSaveDialog.cancel.title'),
+			outline: true,
+		},
+	}).onOk(async () => {
+		const fatherHandler = await savesFolder.value.getDirectoryHandle(
+			node.father
+		);
 
-	let backupToLoadHandler = await fatherHandler.getFileHandle(node.label);
+		let backupToLoadHandler = await fatherHandler.getFileHandle(node.label);
 
-	await copyFileSystem(backupToLoadHandler, originalSave.value);
+		await copyFileSystem(backupToLoadHandler, originalSave.value);
+	});
 };
 </script>

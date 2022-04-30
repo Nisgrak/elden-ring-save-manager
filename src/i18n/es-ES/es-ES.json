@@ -10,6 +10,16 @@
 	"loadSave": "Cargar partida",
 	"loadSaveAndCopy": "Seleccionar partida y copiar",
 	"requestPermission": {
+		"loadSaveDialog": {
+			"cancel": {
+				"title": "Cancelar"
+			},
+			"message": "Vas a sobreescribir tu partida cargada actualmente, ¿estás seguro?",
+			"ok": {
+				"title": "Sobreescribir"
+			},
+			"title": "Cargar partida"
+		},
 		"originalSave": {
 			"cancel": {
 				"title": "Cambiar de partida"
